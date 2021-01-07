@@ -24,7 +24,7 @@
 					<select id="op" name="op">
 
 {if isset($res->op_name)}
-<!--<option value="{$this->form->op}">ponownie: {$res->op_name}</option>-->
+<option value="{$form->op}">ponownie: {$res->op_name}</option>
 <option value="" disabled="true">---</option>
 {/if}
 						<option value="kredyt">kredyt</option>
@@ -76,5 +76,6 @@
 
 </div>
 </div>
+
 
 {/block}

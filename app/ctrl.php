@@ -7,7 +7,7 @@ require_once dirname (__FILE__).'/../config.php';
 
 //1. pobierz nazwę akcji
 
-$action = $_REQUEST['action'];
+$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 
 //2. wykonanie akcji
 switch ($action) {

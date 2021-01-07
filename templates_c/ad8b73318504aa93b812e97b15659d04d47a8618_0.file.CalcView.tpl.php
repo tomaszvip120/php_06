@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-01-07 14:00:26
+/* Smarty version 3.1.30, created on 2021-01-07 18:18:03
   from "D:\xampp\htdocs\php_06_kontroler\app\calc\CalcView.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ff705ead73e49_66629925',
+  'unifunc' => 'content_5ff7424be2eaa2_73104663',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad8b73318504aa93b812e97b15659d04d47a8618' => 
     array (
       0 => 'D:\\xampp\\htdocs\\php_06_kontroler\\app\\calc\\CalcView.tpl',
-      1 => 1610024425,
+      1 => 1610039699,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ff705ead73e49_66629925 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ff7424be2eaa2_73104663 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19604104855ff705ead63c92_11439772', 'footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15393229375ff7424be1f172_42578936', 'footer');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11937815ff705ead739a5_72833400', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14153024125ff7424be2e5b6_80442948', 'content');
 $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender(($_smarty_tpl->tpl_vars['conf']->value->root_path).("/templates/main.html"), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, true);
 }
 /* {block 'footer'} */
-class Block_19604104855ff705ead63c92_11439772 extends Smarty_Internal_Block
+class Block_15393229375ff7424be1f172_42578936 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -46,7 +46,7 @@ Kalkulator<?php
 }
 /* {/block 'footer'} */
 /* {block 'content'} */
-class Block_11937815ff705ead739a5_72833400 extends Smarty_Internal_Block
+class Block_14153024125ff7424be2e5b6_80442948 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -76,9 +76,9 @@ calcCompute" method="post">
 					<select id="op" name="op">
 
 <?php if (isset($_smarty_tpl->tpl_vars['res']->value->op_name)) {?>
-<!--<option value="<?php echo $_smarty_tpl->tpl_vars['this']->value->form->op;?>
+<option value="<?php echo $_smarty_tpl->tpl_vars['form']->value->op;?>
 ">ponownie: <?php echo $_smarty_tpl->tpl_vars['res']->value->op_name;?>
-</option>-->
+</option>
 <option value="" disabled="true">---</option>
 <?php }?>
 						<option value="kredyt">kredyt</option>
@@ -147,6 +147,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 </div>
 </div>
+
 
 <?php
 }
